@@ -1,0 +1,27 @@
+파일을 비교합니다: ball-colliding.txt - BALL-COLLIDING-NEW.TXT
+***** ball-colliding.txt
+  new Ball(100, 400, 20), 
+  new Ball(700, 400, 80) 
+};
+***** BALL-COLLIDING-NEW.TXT
+  new Ball(100, 400, 20), 
+  new Ball(700, 400, 80),
+  new Ball(300, 200, 50)
+};
+*****
+
+***** ball-colliding.txt
+  balls[0].checkCollision(balls[1]);
+}
+***** BALL-COLLIDING-NEW.TXT
+  balls[0].checkCollision(balls[1]);
+  balls[0].checkCollision(balls[2]);
+  balls[1].checkCollision(balls[2]);
+}
+*****
+
+***** ball-colliding.txt
+
+***** BALL-COLLIDING-NEW.TXT
+*****
+
